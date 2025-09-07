@@ -1,0 +1,184 @@
+body {
+    background-color: #f0efeb !important;
+    font-family: 'Lora', serif;
+}
+
+/* Headings use Montserrat for a modern look */
+h1, h2, h3, h4, h5, h6, .LogoText {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.cta-btn {
+    background-color: #3b6666 !important;
+    border: none !important;
+    color: #fff !important;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 2rem !important;
+    box-shadow: 0 2px 8px rgba(74, 106, 106, 0.08); /* updated shadow color */
+    transition: background 0.2s, box-shadow 0.2s;
+}
+
+.cta-btn:hover, .cta-btn:focus {
+    background-color: #4A6A6A !important;
+    box-shadow: 0 4px 16px rgba(74, 106, 106, 0.18); /* updated shadow color */
+    color: #fff !important;
+}
+
+.btn-outline-secondary.cta-btn {
+    background: transparent !important;
+    color: #3b6666 !important;
+    border: 2px solid #3b6666 !important;
+}
+
+.btn-outline-secondary.cta-btn:hover, .btn-outline-secondary.cta-btn:focus {
+    background: #3b6666 !important;
+    color: #fff !important;
+}
+
+.feature-icon-small {
+    background-color: #4A6A6A !important;
+    width: 50px;
+    height: 50px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1rem;
+    box-shadow: 0 2px 8px rgba(74, 106, 106, 0.12); /* updated shadow color */
+}
+
+.icon {
+    color: white !important;
+}
+
+.borders {
+    border-bottom: 1px solid #3b6666 !important;
+}
+
+.hero-overlay {
+    position: relative;
+    overflow: hidden;
+    border-radius: 0.6rem;
+    box-shadow: 0 4px 24px rgba(47, 79, 79, 0.08);
+}
+
+.hero-overlay::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(12, 61, 61, 0.438); /* updated overlay color */
+    z-index: 1;
+    border-radius: 0.6rem;
+}
+
+.hero-overlay > * {
+    position: relative;
+    z-index: 2;
+}
+
+header.borders {
+    background-color: #f0efeb !important;
+    border-bottom: 1px solid #3b6666 !important;
+    color: #4A6A6A !important;
+    border-radius: 0.5rem 0.5rem 0 0;
+}
+
+header.borders .LogoText {
+    color: #4A6A6A !important;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+header.borders .nav-link {
+    color: #3b6666 !important;
+    font-weight: 500;
+    border-radius: 2rem !important;
+    transition: background 0.2s, color 0.2s;
+}
+
+header.borders .nav-link.active,
+header.borders .nav-link:hover {
+    background-color: #4A6A6A !important;
+    color: #fff !important;
+}
+
+footer {
+    background-color: #f0efeb !important;
+    border-radius: 0 0 1rem 1rem;
+}
+
+footer .nav-link {
+    color: #3b6666 !important;
+    font-weight: 500;
+    border-radius: 2rem !important;
+    transition: background 0.2s, color 0.2s;
+}
+
+footer .nav-link:hover {
+    background: #4A6A6A !important;
+    color: #fff !important;
+}
+
+footer p {
+    color: #3b6666 !important;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+
+/* Center content on mobile devices */
+@media (max-width: 767px) {
+    .hero-overlay,
+    .container,
+    .row,
+    .col,
+    .card,
+    .card-cover,
+    .feature-icon-small,
+    .footer,
+    header.borders {
+        text-align: center !important;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+
+    .hero-overlay .row,
+    .row {
+        flex-direction: column !important;
+    }
+
+    .feature-icon-small {
+        margin-left: auto;
+        margin-right: auto;
+        display: flex !important;
+    }
+
+    .cta-btn,
+    .btn,
+    .btn-outline-secondary {
+        margin-left: auto !important;
+        margin-right: auto !important;
+        display: block !important;
+    }
+
+    h1, h2, h3, h4, h5, h6, p, .LogoText {
+        text-align: center !important;
+    }
+
+    header.borders .nav {
+        justify-content: center !important;
+    }
+
+    header.borders .nav-link {
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+    }
+
+    footer .nav {
+        justify-content: center !important;
+    }
+
+    .hero-overlay,
+    .hero-overlay::before {
+        border-radius: 0 !important;
+    }
+}

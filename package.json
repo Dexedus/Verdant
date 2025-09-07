@@ -1,0 +1,25 @@
+{
+  "name": "ksf-designs-website",
+  "version": "1.0.0",
+  "description": "A business website for KSF Designs.",
+  "main": "src/server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js"
+  },
+  "keywords": [
+    "website",
+    "design",
+    "ksf"
+  ],
+  "author": "Your Name",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}
