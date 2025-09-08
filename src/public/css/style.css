@@ -125,6 +125,46 @@ footer p {
     margin-top: 1rem;
 }
 
+
+
+
+/* Animation classes */
+.fade-in-right {
+    opacity: 0;
+    animation: fadeInRight 1s 0.3s ease-in-out forwards;
+}
+
+.fade-in-up {
+    opacity: 0;
+    animation: fadeInUp 1s 0.8s ease-in-out forwards;
+}
+
+
+
+
+/* Keyframes for animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
 /* Center content on mobile devices */
 @media (max-width: 767px) {
     .hero-overlay,

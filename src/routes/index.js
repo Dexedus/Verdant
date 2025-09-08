@@ -15,10 +15,6 @@ router.get('/Pricing', (req, res) => {
     res.render('Pricing');
 });
 
-router.get('/Landing', (req, res) => {
-    res.render('Landing');
-});
-
 router.get('/Contact', (req, res) => {
     res.render('Contact');
 });
