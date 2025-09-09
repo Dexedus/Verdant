@@ -20,7 +20,7 @@ router.get('/contact', (req, res) => {
 });
 
 router.get('/faq', (req, res) => {
-    res.render('FAQ', { currentPage: 'faq' });
+    res.render('faq', { currentPage: 'faq' });
 });
 
 export default router;
