@@ -1,4 +1,37 @@
 <%- include('Components/header') %>
-    <h1>About Page</h1>
-    <script src="/js/main.js"></script>
+<div class="container my-5">
+  <div id="aboutContainer" class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg"
+       style="background-color: #f0efeb; border-color: #3b6666;">
+    
+    <!-- Left Column -->
+    <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
+      <h1 class="display-4 fw-bold lh-1 text-body-emphasis" style="color: #3b6666;">
+        About Verdant & Co.
+      </h1>
+      <p class="lead" style="color: #4A6A6A;">
+        Welcome! We’re passionate about transforming indoor spaces into vibrant, healthy environments with beautiful plants and expert styling. Our team combines a love for greenery with a keen eye for design, helping you create a space that feels fresh, inviting, and uniquely yours.
+        <br><br>
+        Whether you’re looking to add a touch of nature to your home or revitalize your office, we offer curated plant selections and personalized styling services tailored to your needs. From consultation to installation, we make it easy to bring nature indoors.
+        <br><br>
+        Discover the difference that thoughtful plant styling can make. Let’s green your space together!
+      </p>
+      <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
+        <button type="button" class="btn btn-primary btn-lg px-4 me-md-2 fw-bold cta-btn">Shop Plants</button>
+        <button type="button" class="btn btn-outline-secondary btn-lg px-4 cta-btn">Book a Consultation</button>
+      </div>
+    </div>
+    
+    <!-- Right Column -->
+    <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg"
+         style="border-top-left-radius: 0.6rem;">
+      <img src="/images/Snake.webp"
+           alt="Bootstrap docs preview"
+           class="custom-img-radius"
+           style="width: 150%; height: 100%; object-fit: cover; object-position: right bottom;">
+    </div>
+    
+  </div>
+</div>
+
+<script src="/js/main.js"></script>
 <%- include('Components/footer') %>

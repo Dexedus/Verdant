@@ -1,0 +1,30 @@
+<%- include('Components/header') %>
+<div class="container my-5">
+    <h1 class="text-center mb-4" style="color: #3b6666;">Contact Verdant & Co.</h1>
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <form action="/submit-contact" method="POST" class="p-4 rounded-3 border shadow-lg"
+                  style="background-color: #f0efeb; border-color: #3b6666;">
+                <div class="mb-3">
+                    <label for="name" class="form-label" style="color: #4A6A6A;">Name</label>
+                    <input type="text" class="form-control" id="name" name="name" required
+                           style="background-color: #fff; border-color: #4A6A6A; color: #3b6666;">
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label" style="color: #4A6A6A;">Email</label>
+                    <input type="email" class="form-control" id="email" name="email" required
+                           style="background-color: #fff; border-color: #4A6A6A; color: #3b6666;">
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label" style="color: #4A6A6A;">Message</label>
+                    <textarea class="form-control" id="message" name="message" rows="5" required
+                              style="background-color: #fff; border-color: #4A6A6A; color: #3b6666;"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary fw-bold cta-btn"
+                        style="background-color: #3b6666; border-color: #4A6A6A; color: #fff;">
+                    Send Message
+                </button>
+            </form>
+        </div>
+    </div>
+<%- include('Components/footer') %>

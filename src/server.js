@@ -24,6 +24,46 @@ app.use(express.urlencoded({ extended: true }));
 // Use the routes defined in the routes/index.js file
 app.use('/', routes);
 
+app.post('/submit-contact', (req, res) => {
+    const formData = req.body;
+    console.log('Form Data Received:', formData);
+
+    // Send response message, then redirect after 4 seconds
+    res.send(`
+        <html>
+            <head>
+                <meta http-equiv="refresh" content="4;url=/" />
+                <title>Thank You</title>
+                <style>
+                    body { 
+                        background: #f0efeb; 
+                        color: #3b6666; 
+                        font-family: 'Montserrat', sans-serif; 
+                        display: flex; 
+                        align-items: center; 
+                        justify-content: center; 
+                        height: 100vh; 
+                    }
+                    .message {
+                        background: #fff;
+                        border: 2px solid #3b6666;
+                        border-radius: 1rem;
+                        padding: 2rem 3rem;
+                        box-shadow: 0 2px 12px rgba(74, 106, 106, 0.07);
+                        text-align: center;
+                    }
+                </style>
+            </head>
+            <body>
+                <div class="message">
+                    <h2>Form submission received. Thank you!</h2>
+                    <p>You will be redirected to the homepage in 4 seconds.</p>
+                </div>
+            </body>
+        </html>
+    `);
+});
+
 // Start the server
 app.listen(PORT, () => {
     console.log(`Server is running on http://localhost:${PORT}`);

@@ -4,19 +4,23 @@ const router = Router();
 
 // Route for the homepage
 router.get('/', (req, res) => {
-    res.render('index');
+    res.render('index', { currentPage: 'home' });
 });
 
-router.get('/About', (req, res) => {
-    res.render('About');
+router.get('/about', (req, res) => {
+    res.render('about', { currentPage: 'about' });
 });
 
-router.get('/Pricing', (req, res) => {
-    res.render('Pricing');
+router.get('/pricing', (req, res) => {
+    res.render('pricing', { currentPage: 'pricing' });
 });
 
-router.get('/Contact', (req, res) => {
-    res.render('Contact');
+router.get('/contact', (req, res) => {
+    res.render('contact', { currentPage: 'contact' });
+});
+
+router.get('/faq', (req, res) => {
+    res.render('FAQ', { currentPage: 'faq' });
 });
 
 export default router;
